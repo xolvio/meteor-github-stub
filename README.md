@@ -1,11 +1,11 @@
-# github-fake
-A fake for use in testing Meteor apps. Fakes the oauth calls amongst other APIs.
+# github-stub
+A stub for use in testing Meteor apps. Stubs the oauth calls and allows you to fake stub more.
 
 ##Usage:
 
 If you are using GitHub authentication, add this package like this:
 
-`meteor add xolvio:github-fake`
+`meteor add xolvio:github-stub`
 
 Your app will no longer authenticate with GitHub in development mode and will authenticate with
 a fake user even if you do not have an internet connection. This package does not affect production
