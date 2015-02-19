@@ -1,7 +1,7 @@
 Package.describe({
   name: "xolvio:github-fake",
   summary: "A fake for use in testing. Fakes the oauth calls amongst other APIs.",
-  version: "0.0.3",
+  version: "0.0.4",
   git: "https://github.com/xolvio/meteor-github-fake",
   debugOnly: true
 });
