@@ -5,7 +5,7 @@ HttpInterceptor.registerInterceptor('https://api.github.com', Meteor.absoluteUrl
 
 Router.route('fake.github.com/login/oauth/authorize', function () {
   var parameters = _fixIronRouterBug(this.request.query);
-  this.response.writeHead(301, {'Location': parameters.redirect_uri + '&code=a1b2c3d4e5f6g7h8i9j0' + '&state=' + parameters.state});
+  this.response.writeHead(301, {'Location': parameters.redirect_uri + '?code=a1b2c3d4e5f6g7h8i9j0' + '&state=' + parameters.state});
   this.response.end();
 }, {where: 'server'});
 
