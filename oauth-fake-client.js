@@ -17,11 +17,13 @@ var _getFakeOptionsFor = {
   'github': function (options) {
     var loopbackLoginUrl = new URL(options.loginUrl);
 
-    // change the protocol to http so we can run a loopback without extra server configuration
+    // change the protocol to http so we can run a loopback without extra server
+    // configuration
     loopbackLoginUrl.protocol = 'http';
 
     // precede the host with fake
-    loopbackLoginUrl.pathname = 'fake.' + loopbackLoginUrl.host + loopbackLoginUrl.pathname;
+    loopbackLoginUrl.pathname =
+      'fake.' + loopbackLoginUrl.host + loopbackLoginUrl.pathname;
 
     // and loop back to the current app
     loopbackLoginUrl.host = new URL(Meteor.absoluteUrl()).host;
@@ -31,8 +33,5 @@ var _getFakeOptionsFor = {
 
     return options;
   }
-  //,
-  //'twitter': function (options) {
-  //  return options;
-  //}
+
 };
