@@ -7,7 +7,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.use('github', ['client', 'server']);
+  api.use('github@1.1.2', ['client', 'server']);
   api.use(['xolvio:http-interceptor@0.4.0'], ['server']);
   api.use(['iron:router@1.0.6'], ['server']);
   api.add_files('oauth-fake-client.js', 'client');
