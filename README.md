@@ -1,6 +1,13 @@
 # github-stub
 A stub for use in testing Meteor apps. Stubs the oauth calls and allows you to fake stub more.
 
+#Get the Book
+To learn more about testing with Meteor, consider purchasing our book [The Meteor Testing Manual](http://www.meteortesting.com/?utm_source=github-stub&utm_medium=banner&utm_campaign=github-stub).
+
+[![](http://www.meteortesting.com/img/tmtm.gif)](http://www.meteortesting.com/?utm_source=github-stub&utm_medium=banner&utm_campaign=github-stub)
+
+Your support helps us continue our work on Velocity and related frameworks.
+
 ##Usage:
 
 If you are using GitHub authentication, add this package like this:
